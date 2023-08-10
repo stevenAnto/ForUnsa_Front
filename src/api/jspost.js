@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-export const ruta= 'http://127.0.0.1:8000/forUnsa/';
+//export const ruta= 'http://127.0.0.1:8000/forUnsa/';
 //export const ruta= 'https://backend-deploy-production-4f42.up.railway.app/forUnsa/';
-//export const ruta = 'https://forunsa2.onrender.com/forUnsa/';
+export const ruta = 'https://forunsa2.onrender.com/forUnsa/';
 
 const dir= axios.create({
     baseURL: ruta
