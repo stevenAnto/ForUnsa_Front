@@ -1,11 +1,11 @@
 import comunicado from "/src/static/images/comunicadoUnsa.jpg";
 export function LeftColumn(){
     return(
-        <div class="leftColumn">
-            <div class="listadoPost">
-                <div class="listadoPostTitulo">Listado de Post</div>
-                <div class="listadoPostDetalle">
-                    <ul class="tree">
+        <div className="leftColumn">
+            <div className="listadoPost">
+                <div className="listadoPostTitulo">Listado de Post</div>
+                <div className="listadoPostDetalle">
+                    <ul className="tree">
                     <li>
                         <details>
                         <summary>Area de Biomedicas</summary>
@@ -81,7 +81,7 @@ export function LeftColumn(){
                     </ul>
                 </div>
             </div>
-            <div class="comunicados">
+            <div className="comunicados">
                 <img src={comunicado} alt="comunicado"/>
             </div>
         </div>

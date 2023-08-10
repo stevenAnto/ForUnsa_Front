@@ -40,7 +40,7 @@ export function LoginPage() {
                     <label>Contraseña: </label>
                     <input type="password" id='password' name='password' value={password} onChange={(e) => setPassword(e.target.value)}/> 
                     <br></br>
-                    <div class="buttonLogin"></div>
+                    <div className="buttonLogin"></div>
                     <button onClick={handleLogin}>Iniciar Sesión</button>
                     <p><a href="/register">¿Aún no tiene una cuenta?</a></p>
                 </div>

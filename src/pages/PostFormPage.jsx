@@ -101,42 +101,42 @@ export function PostFormPage() {
     },[])
 
     return(
-      <div class="paraCentrar">
+      <div className="paraCentrar">
         <form class ="crearPostContainer" action="" onSubmit={onSubmit} encType="multipart/form-data">
-              <div class="crearPostF1">Crear Publicacion</div>
-              <div class="crearPostF2">
-                <div class="labelTitulo">Titulo</div>
-                <div class="inputTitulo">
-                  <input class="inputCrearPost" type="text" placeholder="Titulo" {...register("title",{required: true})}/>
+              <div className="crearPostF1">Crear Publicacion</div>
+              <div className="crearPostF2">
+                <div className="labelTitulo">Titulo</div>
+                <div className="inputTitulo">
+                  <input className="inputCrearPost" type="text" placeholder="Titulo" {...register("title",{required: true})}/>
                 </div>
               </div>
-              <div class="crearPostF3">Contenido</div>
-              <div class="crearPostF4">
+              <div className="crearPostF3">Contenido</div>
+              <div className="crearPostF4">
                 <textarea placeholder="Escribe aqui tu post" {...register("content",{required: true})}></textarea>
               </div>
               <div>
               </div>
-              <div class="crearPostF5">
-                <div class="inputsAnadir">
-                  <div class="addImg">
+              <div className="crearPostF5">
+                <div className="inputsAnadir">
+                  <div className="addImg">
                     <input type="file" id="inputImagen" accept="image/*"/>
                   </div>
-                  <div class="addDoc">
+                  <div className="addDoc">
                     <input type="file" id="inputPdf" accept=".pdf"/>
                   </div>
-                  <div class="secctioCrear">Seccion</div>
-                  <div class="addEsc">Mi escuela</div>
+                  <div className="secctioCrear">Seccion</div>
+                  <div className="addEsc">Mi escuela</div>
                 </div>
-                <div class="creaTags">
-                  <div class="labelTags">Tags</div>
+                <div className="creaTags">
+                  <div className="labelTags">Tags</div>
                   <ListTags/>
                 </div>
               </div>
-              <div class="crearPostF6">
-                <button type="submit" class="subirCrear" >Subir</button>
-                <button type="button" class="subirCancelar" onClick={onCancelar}>Cancelar</button>
+              <div className="crearPostF6">
+                <button type="submit" className="subirCrear" >Subir</button>
+                <button type="button" className="subirCancelar" onClick={onCancelar}>Cancelar</button>
                 {params.id &&
-                <button type="button" class="subirCancelar" onClick={onDelete} >Eliminar publicación</button>}
+                <button type="button" className="subirCancelar" onClick={onDelete} >Eliminar publicación</button>}
               </div>
             </form>
         </div>

@@ -9,7 +9,7 @@ export function BodyPage(props){
     }
     const params= useParams();
     return(
-        <div class="cuerpo">
+        <div className="cuerpo">
             <LeftColumn/>
             <MidColumn mod={props.mod} tag={params.id} titulo={params.titulo}/>
             <RigthColumn/>

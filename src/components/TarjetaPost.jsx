@@ -59,20 +59,20 @@ export function TarjetaPost(props) {
     }, []);
 
     return(
-        <div class="postContainer" key={post.id}>
-            <div class="postContainerf1">
-              <div class="fotoPerfil">
-                <img src={datos.img} class="fotoPerfilTarjeta" alt="foto de Usuario"/>
+        <div className="postContainer" key={post.id}>
+            <div className="postContainerf1">
+              <div className="fotoPerfil">
+                <img src={datos.img} className="fotoPerfilTarjeta" alt="foto de Usuario"/>
               </div>
-              <div class="derechaFoto">
-                <div class="topicosContainer">
-                  <div class="topicoCurso">
+              <div className="derechaFoto">
+                <div className="topicosContainer">
+                  <div className="topicoCurso">
                     {post.title}
                   </div>
                   {localStorage.getItem('user_id') === null ? (
                     <div>
-                      <div class="topicoTresPuntos">
-                        <i class="fa-solid fa-ellipsis" onClick={handleShow}></i>
+                      <div className="topicoTresPuntos">
+                        <i className="fa-solid fa-ellipsis" onClick={handleShow}></i>
                         <ModalComponent
                         show={showModal}
                         onHide={handleClose}
@@ -82,7 +82,7 @@ export function TarjetaPost(props) {
                       </div>
                     </div>
                   ) : (
-                    <div class="topicoTresPuntos" 
+                    <div className="topicoTresPuntos" 
                       onClick={()=>{
                           if(user== post.user){
                             navigate('/post/' + post.id);
@@ -91,51 +91,51 @@ export function TarjetaPost(props) {
                           }
                       }}
                       >
-                      <i class="fa-solid fa-ellipsis"></i>
+                      <i className="fa-solid fa-ellipsis"></i>
                     </div>
                   )}
                 </div>
-                <div class="NombreFecha">
-                  <div class="nombre">
+                <div className="NombreFecha">
+                  <div className="nombre">
                     {datos.username}
                   </div>
-                  <div class="fechaPublicacion">
+                  <div className="fechaPublicacion">
                     {fechaFormateada}
                   </div>
                 </div>
               </div>
             </div>
-            <div class="postContainerf2" >
+            <div className="postContainerf2" >
               {post.content}
             </div>
-            <div class="postContainerf3">
+            <div className="postContainerf3">
                 <ListTags tags={post.tags} c={post.id}/>
             </div>
             {imagen && 
-            <div class="postContainerf4">
+            <div className="postContainerf4">
               <img src={imagen} width="70%" alt="publicacion"/>              
             </div>}
             {pdf &&
-            <div class="postContainerf6">
+            <div className="postContainerf6">
               <br />
-              <i class="fas fa-file-pdf pdf-icon"></i>
+              <i className="fas fa-file-pdf pdf-icon"></i>
               <a href={pdf} target="_blank">{decodeURIComponent(pdf.substring(33))}</a>
             </div>}
-            <div class="postContainerf5">
-              <div class="likes">
-                <i id={"iclk" + post.id} data-active="0" class="fa-regular fa-thumbs-up" onClick={onClickLike}></i>
-                <div class="likescount" id={"lk" + post.id}>{post.likes_count}</div>
-                <i id={"icdlk" + post.id} data-active="0" class="fa-regular fa-thumbs-down" onClick={onClickDislike}></i>
-                <div class="dislikescount" id={"dlk" + post.id} >{post.dislikes_count}</div>
+            <div className="postContainerf5">
+              <div className="likes">
+                <i id={"iclk" + post.id} data-active="0" className="fa-regular fa-thumbs-up" onClick={onClickLike}></i>
+                <div className="likescount" id={"lk" + post.id}>{post.likes_count}</div>
+                <i id={"icdlk" + post.id} data-active="0" className="fa-regular fa-thumbs-down" onClick={onClickDislike}></i>
+                <div className="dislikescount" id={"dlk" + post.id} >{post.dislikes_count}</div>
               </div>
-              <div class="derechaLike">
-                <i class="fa-regular fa-comment-dots"></i>
+              <div className="derechaLike">
+                <i className="fa-regular fa-comment-dots"></i>
                 <div>Ver {post.comments_count} comentarios</div>
-                <i class="fa-regular fa-bookmark"></i>
+                <i className="fa-regular fa-bookmark"></i>
               </div>
             </div>
 
-            <div class="comentarios">
+            <div className="comentarios">
                 <ListComentarios coms={coms} users={users} />
             </div>
         </div>
@@ -156,9 +156,9 @@ export function TarjetaPost(props) {
 
 export function ListTags({tags,id}){
   return (
-      <div class="containerTags">
+      <div className="containerTags">
           {tags.map( tag => (
-              <div key={tag + id} class="tags"><a class="numtag" href={"http://localhost:5173/tag/" + tag}>{tag}</a></div>
+              <div key={tag + id} className="tags"><a className="numtag" href={"http://localhost:5173/tag/" + tag}>{tag}</a></div>
           ))}
       </div>
   );
@@ -167,9 +167,9 @@ export function ListTags({tags,id}){
 export function ListComentarios({coms}){
   if (coms.length > 0)
   return (
-      <div class="containerTags">
+      <div className="containerTags">
           {coms.map( com => (
-              <div key={com.id} class="Contentcomment">
+              <div key={com.id} className="Contentcomment">
                 <TarjetaComentario com={com} />
               </div>
           ))}

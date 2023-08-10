@@ -35,42 +35,42 @@ export function Header() {
   };
 
     return(
-        <div class="header">
-            <div class="headerChild">
-                <div class="logo">
-                    <div class="LogoForUnsa">
+        <div className="header">
+            <div className="headerChild">
+                <div className="logo">
+                    <div className="LogoForUnsa">
                         <a href="/">
                             <img src={logo} width="70px" alt="logo ForUnsa" />
                         </a>
                     </div>
                 </div>
-                <div class="busqueda">
-                    <div class="busquedaBarra">
-                        <input class="busquedaTop" type="text" placeholder="Search..." name="search" />
+                <div className="busqueda">
+                    <div className="busquedaBarra">
+                        <input className="busquedaTop" type="text" placeholder="Search..." name="search" />
                         <button type="submit">
-                            <i class="fa fa-search"></i>
+                            <i className="fa fa-search"></i>
                         </button>
                     </div>
                 </div>
-            <div class="iconos">
-                <div class="interiorIcones">
-                  <div class="i">
+            <div className="iconos">
+                <div className="interiorIcones">
+                  <div className="i">
                       <a href="/">
-                      <i class="fa-solid fa-house hover-effect d-none d-md-inline"></i>
+                      <i className="fa-solid fa-house hover-effect d-none d-md-inline"></i>
                       </a>                    
                   </div>
-                  <div class="i">
-                      <i class="fa-regular fa-circle-question"></i>
+                  <div className="i">
+                      <i className="fa-regular fa-circle-question"></i>
                   </div>
-                  <div class="i">
+                  <div className="i">
                       <a href="/social">
-                      <i class="fa-solid fa-user-group hover-effect  d-none d-md-inline"></i>
+                      <i className="fa-solid fa-user-group hover-effect  d-none d-md-inline"></i>
                       </a>
                   </div>
-                  <div class="i">
-                      <i class="fa-regular fa-message hover-effect  d-none d-md-inline"></i>
+                  <div className="i">
+                      <i className="fa-regular fa-message hover-effect  d-none d-md-inline"></i>
                   </div>
-                  <div className="dropdown-container" class="i">
+                  <div className="dropdown-container" className="i">
                   {localStorage.getItem('user_id') === null ? (
                       <div>
                       <i
@@ -106,8 +106,8 @@ export function Header() {
                 </div>
                </div>
             </div>
-                <div class="hamburgerMenu">
-                    <i class="fa-solid fa-bars"></i>
+                <div className="hamburgerMenu">
+                    <i className="fa-solid fa-bars"></i>
                 </div>
           </div>
     );

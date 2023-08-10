@@ -11,23 +11,23 @@ export function RigthColumn(){
     window.location.href ="/tag/" + indice;
   }; 
     return(
-        <div class="rigthColumn">
-            <div class="columnside">
-          <div class="containerTags">
+        <div className="rigthColumn">
+            <div className="columnside">
+          <div className="containerTags">
             <div>Buscar por Tag</div>
-            <div class="barraBuscarTag">
+            <div className="barraBuscarTag">
               <ListTags/>             
-              <i class="fa fa-search" onClick={busqueda}></i>
+              <i className="fa fa-search" onClick={busqueda}></i>
             </div>
             
-            <div class="tags">
+            <div className="tags">
               <a href="/tag/2">Calculo </a>
               <a href="/tag/1">Ing. de Sistemas </a>
               <a href="/tag/3">Programacion </a>
             </div>
           </div>
-          <div class="containerPreguntas">
-            <div class="preguntasFrecuentas">Preguntas Frecuentes</div>
+          <div className="containerPreguntas">
+            <div className="preguntasFrecuentas">Preguntas Frecuentes</div>
             <ul>
               <li>Que es Forounsa</li>
               <li>Cuales son nuestros objetivos</li>

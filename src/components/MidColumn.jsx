@@ -19,13 +19,13 @@ export function MidColumn(props){
   //{props.mod ? <ListSocialPost /> : <ListPost />}
   const navigate= useNavigate()
     return(
-        <div class="midColumn" id="mid" data-mod={props.mod}>
-          <div class="midcolumHeader">
-            <div class="topMedio">
+        <div className="midColumn" id="mid" data-mod={props.mod}>
+          <div className="midcolumHeader">
+            <div className="topMedio">
               <div><a href="/tag/1" >Mi escuela</a></div>
               <div><a href="/all/" >Todos</a></div>
             </div>
-            <div class="subTopMedio">
+            <div className="subTopMedio">
               <div><a href="/popular/" >Popular</a></div>
               <div><a href="/" >Nuevos</a></div>
               {localStorage.getItem('user_id') === null ? (
@@ -48,7 +48,7 @@ export function MidColumn(props){
               
             </div>
           </div>
-          <div class="botMedio">
+          <div className="botMedio">
             <ListPost mod={props.mod} tag={props.tag} titulo={props.titulo}/>
           </div>
         </div>

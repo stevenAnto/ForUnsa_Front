@@ -47,10 +47,10 @@ export function RegisterPage() {
 
     return(
         <div>     
-            <div class="loginBackground">
+            <div className="loginBackground">
                 <img src="src/static/images/login-background.jpg" width="100%" height="100%" alt=""/>
             </div>
-            <div class="login">
+            <div className="login">
                 <h3>Bienvenido</h3>
                 <p><strong>"Un lugar para compartir conocimientos"</strong></p>
                 <img src="src/static/images/unsa.jpg" width="40%" height="40%" alt=""/> <br></br>

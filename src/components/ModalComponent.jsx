@@ -71,7 +71,7 @@ function ModalComponent({ show, onHide, title, onSubmit }) {
           </Button>
           <br/>
         </Modal.Footer>        
-          <div class="modalregister">
+          <div className="modalregister">
               <a href="/register">
                 <Button variant="primary" className="modal-footer-register">
                   No tengo una cuenta

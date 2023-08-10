@@ -16,15 +16,15 @@ export function TarjetaComentario(props){
     }, []);
 
     return(
-        <div class="comment">
-            <div class="fotoPerfil">
-                <img src={datos.img} class="fotoPerfilTarjeta" alt="foto de Usuario"/>
+        <div className="comment">
+            <div className="fotoPerfil">
+                <img src={datos.img} className="fotoPerfilTarjeta" alt="foto de Usuario"/>
             </div>
-            <div class="NombreFecha">
-                  <div class="nombre">
+            <div className="NombreFecha">
+                  <div className="nombre">
                     {datos.username}
                   </div>
-                  <div class="fechaPublicacion">
+                  <div className="fechaPublicacion">
                     {fechaFormateada}
                   </div>
             </div>
