@@ -1,7 +1,7 @@
 {
   "name": "client",
   "private": true,
-  "homepages": "htpp://stevenAnto.github.io/ForUnsa_Front",
+ 
   "version": "0.0.0",
   "type": "module",
   "scripts": {
