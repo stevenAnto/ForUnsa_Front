@@ -263,6 +263,7 @@ html, body{
   height:100%;
   overflow-y:scroll;
   scrollbar-width: thin;
+  overflow-x:hidden;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -493,6 +494,10 @@ a{
   .logo{
 
   }
+  .cuerpo{
+    height:105%;
+  }
+ 
 }
 
 
