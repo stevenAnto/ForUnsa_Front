@@ -497,6 +497,17 @@ a{
   .cuerpo{
     height:105%;
   }
+  html, body{
+  height:103%;
+  overflow-y:hidden;
+}
+  .LogoForUnsa {
+    transform: scale(2);
+}
+  .hamburgerMenu>i {
+ 
+    transform: scale(2);
+}
  
 }
 
